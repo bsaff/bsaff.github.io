@@ -1,0 +1,36 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.7.0/libexec/bin/yarn.js add react dependabot
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/bsaff/Library/Android/sdk/emulator:/Users/bsaff/Library/Android/sdk/tools
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  9.8.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/dependabot: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:65656:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:134675:22)
+      at Request.emit (events.js:180:13)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:135658:10)
+      at Request.emit (events.js:180:13)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:135578:12)
+      at Object.onceWrapper (events.js:272:13)
+      at IncomingMessage.emit (events.js:185:15)
+      at endReadableNT (_stream_readable.js:1101:12)
+      at process._tickCallback (internal/process/next_tick.js:114:19)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
