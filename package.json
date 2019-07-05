@@ -1,5 +1,41 @@
 {
+  "name": "bsaff.github.io",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
   "dependencies": {
-    "react": "^16.8.6"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "@babel/preset-react": "^7.0.0"
+  },
+  "babel": {
+    "env": {
+      "development": {
+        "presets": [
+          "@babel/preset-env",
+          "@babel/preset-react"
+        ]
+      },
+      "production": {
+        "presets": [
+          [
+            "@babel/preset-env",
+            {
+              "targets": {
+                "ie": 9
+              },
+              "forceAllTransforms": true
+            }
+          ],
+          "@babel/preset-react"
+        ]
+      }
+    }
   }
 }
