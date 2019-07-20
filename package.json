@@ -2,9 +2,11 @@
   "name": "bsaff.github.io",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack --mode=production",
+    "build:dev": "webpack --mode=development"
   },
   "dependencies": {
+    "core-js": "3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
