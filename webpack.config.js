@@ -1,9 +1,12 @@
 const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/app.js',
   output: {
     filename: 'app.js',
+    publicPath: '/',
     path: path.resolve(__dirname, 'dist')
   },
   module: {
@@ -16,5 +19,13 @@ module.exports = {
         }
       }
     ]
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({ title: 'Ben is a dork.'})
+  ],
+  devServer: {
+    contentBase: './',
+    hot: true
   }
 };
