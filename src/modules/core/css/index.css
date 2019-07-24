@@ -1,4 +1,13 @@
 body {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+p {
+
 }
