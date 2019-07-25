@@ -2,40 +2,28 @@
   "name": "bsaff.github.io",
   "version": "1.0.0",
   "scripts": {
-    "build": "babel src -d lib"
+    "build": "webpack --mode=production",
+    "build:dev": "webpack --mode=development",
+    "start": "webpack-dev-server --mode development"
   },
   "dependencies": {
+    "core-js": "3",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.0",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.4",
-    "@babel/core": "^7.5.4",
-    "@babel/preset-react": "^7.0.0"
-  },
-  "babel": {
-    "env": {
-      "development": {
-        "presets": [
-          "@babel/preset-env",
-          "@babel/preset-react"
-        ]
-      },
-      "production": {
-        "presets": [
-          [
-            "@babel/preset-env",
-            {
-              "targets": {
-                "ie": 9
-              },
-              "forceAllTransforms": true
-            }
-          ],
-          "@babel/preset-react"
-        ]
-      }
-    }
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.1.0",
+    "file-loader": "^4.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.37.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
   }
 }

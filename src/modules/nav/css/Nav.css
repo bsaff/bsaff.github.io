@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 5px;
+}
+
+.header img {
+  width: 200px;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+
+.links > a {
+  flex: 1 1 150px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
