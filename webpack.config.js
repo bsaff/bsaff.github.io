@@ -4,9 +4,9 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: './app-switch.js',
+  entry: './react-app/app.js',
   output: {
-    filename: 'app.js',
+    filename: 'react-app.js',
     publicPath: '/dist/',
     path: path.resolve(__dirname, 'dist')
   },

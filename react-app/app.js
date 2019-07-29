@@ -4,10 +4,7 @@ import AppRouter from './router';
 
 const MOUNT_NODE = document.getElementById('app');
 
-export default () => {
-  ReactDOM.render(
-    <AppRouter />,
-    MOUNT_NODE,
-  );
-};
-
+ReactDOM.render(
+  <AppRouter />,
+  MOUNT_NODE,
+);
