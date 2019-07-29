@@ -4,8 +4,8 @@
  */
 
 const USE_VUE_FLAG = 'USE_VUE';
-const REACT_INIT_SCRIPT = 'dist/react-app.js';
-const VUE_INIT_SCRIPT = 'dist/vue-app.js';
+const REACT_INIT_SCRIPT = 'dist/reactApp.js';
+const VUE_INIT_SCRIPT = 'dist/vueApp.js';
 
 if (!window.APP_RENDERED) {
   const script = document.createElement('script');

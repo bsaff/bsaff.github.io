@@ -2,11 +2,15 @@
 
 const path = require('path');
 const webpack = require('webpack');
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
-  entry: './react-app/app.js',
+  entry: {
+    reactApp: './react-app/app.js',
+    vueApp: './vue-app/app.js'
+  },
   output: {
-    filename: 'react-app.js',
+    filename: '[name].js',
     publicPath: '/dist/',
     path: path.resolve(__dirname, 'dist')
   },
@@ -19,7 +23,9 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ['style-loader'],
+        use: [
+          'style-loader'
+        ]
       },
       {
         test: /\.css$/i,
@@ -37,13 +43,23 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader'
+      }
     ]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new VueLoaderPlugin()
   ],
   devServer: {
     contentBase: './',
     hot: true
+  },
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js' // 'vue/dist/vue.common.js' for webpack 1
+    }
   }
 };
