@@ -33,5 +33,20 @@ export const WritingLinks = [
     label: 'Eastern Wisdom for the Broken Heart',
     postLabel: 'Thought Catalog',
     url: 'https://thoughtcatalog.com/ben-saff/2016/04/5-eastern-wisdoms-to-help-heal-your-broken-heart/'
+  },
+  {
+    label: 'In Review: Tokyo Ueno Station by Yū Miri',
+    postLabel: 'Asymptote Journal',
+    url: 'https://www.asymptotejournal.com/blog/2019/03/11/misshapen-shards-yu-miris-tokyo-ueno-station-in-review/'
+  },
+  {
+    label: 'In Review: The Samurai by Shūsaku Endō',
+    postLabel: 'Asymptote Journal',
+    url: 'https://www.asymptotejournal.com/blog/2018/10/11/a-journey-of-faith-shusaku-endos-the-samurai-in-review/'
+  },
+  {
+    label: 'In Review: The Emissary by Yoko Tawada',
+    postLabel: 'Asymptote Journal',
+    url: 'https://www.asymptotejournal.com/blog/2018/05/24/in-review-the-emissary-by-yoko-tawada/'
   }
 ];
