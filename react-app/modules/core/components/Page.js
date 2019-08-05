@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from '../css/Page.css';
 
 const Page = ({ children }) => (
@@ -6,3 +7,7 @@ const Page = ({ children }) => (
 );
 
 export default Page;
+
+Page.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.object)
+};
