@@ -1,3 +1,5 @@
+@import './animations.css';
+
 :root {
   --link-color: firebrick;
   --link-color-hover: #e88989;
@@ -6,6 +8,10 @@
 body {
   margin: 0 auto;
   max-width: 550px;
+}
+
+:global(#app) {
+  animation: fadeIn 500ms ease;
 }
 
 h1 {

@@ -1,3 +1,8 @@
+@import './animations.css';
+
 .wrapper {
   padding: 20px;
+  * {
+    animation: fadeIn 250ms ease;
+  }
 }
