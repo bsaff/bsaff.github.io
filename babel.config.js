@@ -1,19 +1,20 @@
+/*eslint-env node*/
 
 const presets = [
   [
-    "@babel/env",
+    '@babel/env',
     {
       targets: {
-        edge: "17",
-        firefox: "60",
-        chrome: "70",
-        safari: "11.1",
+        edge: '17',
+        firefox: '60',
+        chrome: '70',
+        safari: '11.1',
       },
-      useBuiltIns: "usage",
+      useBuiltIns: 'usage',
       corejs: 3
     }
   ],
-  "@babel/react"
+  '@babel/react'
 ];
 
 module.exports = { presets };
