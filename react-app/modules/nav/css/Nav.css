@@ -9,15 +9,6 @@
   width: 200px;
 }
 
-.socialLinks {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  line-height: 1.5;
-}
-
 .links {
   display: flex;
   justify-content: space-around;
