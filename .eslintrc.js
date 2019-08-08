@@ -22,6 +22,14 @@ module.exports = {
         "react"
     ],
     "rules": {
-        quotes: ["error", "single"]
+        quotes: ["error", "single"],
+        indent: ["error", 2],
+        "no-console": ["error"],
+        'object-curly-spacing': ["error", "always"]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     }
 };

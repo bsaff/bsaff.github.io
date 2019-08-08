@@ -12,14 +12,14 @@ function AppRouter() {
   return (
     <Router>
       <Nav />
-        <Page>
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/writing" exact component={Writing} />
-            <Route path="/music" exact component={Music} />
-            <Route component={NotFound} />
-          </Switch>
-        </Page>
+      <Page>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/writing" exact component={Writing} />
+          <Route path="/music" exact component={Music} />
+          <Route component={NotFound} />
+        </Switch>
+      </Page>
     </Router>
   );
 }

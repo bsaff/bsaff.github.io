@@ -9,5 +9,5 @@ const Page = ({ children }) => (
 export default Page;
 
 Page.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.object)
+  children: PropTypes.node
 };
