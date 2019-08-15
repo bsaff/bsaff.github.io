@@ -3,12 +3,14 @@
 :root {
   --link-color: firebrick;
   --link-color-hover: #e88989;
+  --tap-highlight: #fbfefe;
 }
 
 body {
   margin: 0 auto;
   max-width: 550px;
   font-family: 'Crimson Text', serif;
+  -webkit-tap-highlight-color: var(--tap-highlight);
 }
 
 :global(#app) {
