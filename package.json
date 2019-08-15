@@ -6,7 +6,9 @@
     "build": "webpack --mode=production",
     "build:dev": "webpack --mode=development",
     "start": "webpack-dev-server --mode development",
-    "lint": "eslint ./react-app"
+    "lint": "eslint ./react-app",
+    "profile": "webpack --profile --json > stats.json",
+    "analyze": "webpack-bundle-analyzer stats.json ./dist"
   },
   "husky": {
     "hooks": {
@@ -39,6 +41,7 @@
     "vue-loader": "^15.7.1",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.39.1",
+    "webpack-bundle-analyzer": "^3.4.1",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.7.2"
   },
