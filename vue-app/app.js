@@ -1,6 +1,7 @@
 import './components/nav';
 import './layouts/body';
 import { getTemplate, ROUTES } from './router/routes';
+import './css/index.css';
 
 // set default location
 window.location.hash = ROUTES.HOME;
