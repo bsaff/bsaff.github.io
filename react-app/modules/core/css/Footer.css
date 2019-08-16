@@ -1,0 +1,19 @@
+.wrapper {
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+
+  img {
+    width: 20px;
+    opacity: 0.9;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.4;
+    }
+  }
+}
