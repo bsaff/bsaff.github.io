@@ -1,12 +1,14 @@
+$imageHeight: 200px;
+
 .header {
   display: flex;
   justify-content: center;
   padding: 20px 0 5px;
-  height: 200px;
+  height: calc($imageHeight + 25px);
 }
 
 .header img {
-  width: 200px;
+  width: $imageHeight;
 }
 
 .links {
