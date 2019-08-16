@@ -1,21 +1,25 @@
 import './components/nav';
 import './layouts/body';
+import './pages/home';
 
-const Home = { template: '<p>Home</p>' };
+const Home = 'home-page';
 const Music = { template: '<p>Music</p>' };
 const Writing = { template: '<p>Writing</p>' };
 const NotFound = { template: '<p>Not found</p>' };
 
+// set default
+window.location.hash = '#home';
+
 const routes = {
-  '/': Home,
-  '/music': Music,
-  '/writing': Writing
+  '#home': Home,
+  '#music': Music,
+  '#writing': Writing
 };
 
-new Vue({
+const app = new Vue({
   el: '#app',
   data: {
-    currentRoute: window.location.pathname
+    currentRoute: window.location.hash
   },
   computed: {
     ViewComponent() {
@@ -30,4 +34,8 @@ new Vue({
       ])
     ]);
   }
+});
+
+window.addEventListener('hashchange', function() {
+  app.currentRoute = window.location.hash;
 });
