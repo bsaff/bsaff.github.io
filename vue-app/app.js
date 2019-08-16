@@ -1,20 +1,9 @@
 import './components/nav';
 import './layouts/body';
-import './pages/home';
+import { getTemplate, ROUTES } from './router/routes';
 
-const Home = 'home-page';
-const Music = { template: '<p>Music</p>' };
-const Writing = { template: '<p>Writing</p>' };
-const NotFound = { template: '<p>Not found</p>' };
-
-// set default
-window.location.hash = '#home';
-
-const routes = {
-  '#home': Home,
-  '#music': Music,
-  '#writing': Writing
-};
+// set default location
+window.location.hash = ROUTES.HOME;
 
 const app = new Vue({
   el: '#app',
@@ -23,7 +12,7 @@ const app = new Vue({
   },
   computed: {
     ViewComponent() {
-      return routes[this.currentRoute] || NotFound
+      return getTemplate(this.currentRoute);
     }
   },
   render(createElement) {
