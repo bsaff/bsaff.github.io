@@ -5,7 +5,8 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    reactApp: './react-app/app.js'
+    reactApp: './react-app/app.js',
+    vueApp: './vue-app/app.js'
   },
   output: {
     filename: '[name].js',
