@@ -1,4 +1,7 @@
-.text {
+.wrapper {
   padding-left: 20px;
+}
+
+.text {
   line-height: 1.5;
 }
