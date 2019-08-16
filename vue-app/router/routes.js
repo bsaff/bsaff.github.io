@@ -11,7 +11,7 @@ const NotFound = { template: '<p>Not found</p>' };
 const ROUTER = {
   [ROUTES.HOME]: 'home-page',
   [ROUTES.MUSIC]: { template: '<p>Music</p>' },
-  [ROUTES.WRITING]: { template: '<p>Not found</p>' }
+  [ROUTES.WRITING]: { template: '<p>Writing</p>' }
 };
 
 export const getTemplate = location => ROUTER[location] || NotFound
