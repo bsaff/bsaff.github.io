@@ -36,7 +36,7 @@
     "husky": "^3.0.3",
     "postcss-loader": "^3.0.0",
     "precss": "^4.0.0",
-    "style-loader": "^0.23.1",
+    "style-loader": "^1.0.0",
     "webpack": "^4.39.2",
     "webpack-bundle-analyzer": "^3.4.1",
     "webpack-cli": "^3.3.6",
