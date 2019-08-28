@@ -10,9 +10,9 @@ Vue.component('home-page', {
     },
   },
   template: `
-    <div>
+  <div class=${styles.wrapper}>
     <h1>hello – </h1>
-    <div class=${styles.content}>
+    <div>
       <p>My name is Ben. I&apos;m a software enginner. This site is built with Vue.js. You can view the source code <a href=${SOURCE_CODE_URL}>here.</a></p>
       <a href="" @click="handleClick">Switch to React</a>
     </div>

@@ -1,4 +1,5 @@
 import Logo from '../assets/bsaff-red-logo.jpg';
+import styles from '../css/nav.css';
 
 // Define a new component called button-counter
 Vue.component('b-nav', {
@@ -22,11 +23,11 @@ Vue.component('b-nav', {
   },
   template: `
     <nav>
-      <div className={styles.header}>
+      <div class=${styles.header}>
         <img src=${Logo} alt="Ben's face on a whiteboard" />
       </div>
-      <div class="links" v-for="link in links">
-        <a :href="link.href">{{link.name}}</a>
+      <div class=${styles.links}>
+        <a :href="link.href" v-for="link in links">{{link.name}}</a>
       </div>
     </nav>
   `

@@ -7,9 +7,9 @@ const handleClick = () => {
 };
 
 const Home = () => (
-  <div>
+  <div className={styles.wrapper}>
     <h1>hello – </h1>
-    <div className={styles.wrapper}>
+    <div>
       <p className={styles.text}>My name is Ben. I&apos;m a software enginner. This site is built with React, Babel, & Webpack.</p>
       <a href="" onClick={handleClick}>Switch to Vue.js</a>
     </div>

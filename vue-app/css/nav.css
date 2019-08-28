@@ -3,7 +3,7 @@ $imageHeight: 200px;
 .header {
   display: flex;
   justify-content: center;
-  padding: 20px 0 0;
+  padding: 20px 0 0px;
   height: calc($imageHeight + 20px);
 }
 
@@ -13,12 +13,10 @@ $imageHeight: 200px;
 
 .links {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
 }
 
 .links > a {
-  flex: 1 1 150px;
-  text-align: center;
+  margin: 0 5px;
   color: rgba(0, 0, 0, 1);
 }
