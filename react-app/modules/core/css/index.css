@@ -30,3 +30,7 @@ a {
 a:hover {
   color: var(--link-color-hover);
 }
+
+p {
+  line-height: 1.5;
+}

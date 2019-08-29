@@ -1,12 +1,12 @@
 import React from 'react';
 import List from '../../core/components/List';
 import { WritingLinks } from '../data';
+import Page from './Page';
 
 const Writing = () => (
-  <div>
-    <h1>writing – </h1>
+  <Page title="writing">
     <List items={WritingLinks} />
-  </div>
+  </Page>
 );
 
 export default Writing;

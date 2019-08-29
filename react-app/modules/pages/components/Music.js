@@ -1,12 +1,12 @@
 import React from 'react';
 import List from '../../core/components/List';
 import { MusicLinks } from '../data';
+import Page from './Page';
 
 const Music = () => (
-  <div>
-    <h1>music projects – </h1>
+  <Page title="music projects">
     <List items={MusicLinks} />
-  </div>
+  </Page>
 );
 
 export default Music;

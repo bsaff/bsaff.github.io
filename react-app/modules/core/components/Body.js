@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from '../css/Page.css';
+import styles from '../css/Body.css';
 
-const Page = ({ children }) => (
+const Body = ({ children }) => (
   <div className={styles.wrapper}>{children}</div>
 );
 
-export default Page;
+export default Body;
 
-Page.propTypes = {
+Body.propTypes = {
   children: PropTypes.node
 };

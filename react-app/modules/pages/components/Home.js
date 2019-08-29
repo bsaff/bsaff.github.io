@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from '../css/Home.css';
+import styles from '../css/Page.css';
+import Page from './Page';
 
 const handleClick = () => {
   localStorage.setItem('USE_VUE', true);
@@ -7,13 +8,10 @@ const handleClick = () => {
 };
 
 const Home = () => (
-  <div className={styles.wrapper}>
-    <h1>hello – </h1>
-    <div>
-      <p className={styles.text}>My name is Ben. I&apos;m a software enginner. This site is built with React, Babel, & Webpack.</p>
-      <a href="" onClick={handleClick}>Switch to Vue.js</a>
-    </div>
-  </div>
+  <Page title="hello">
+    <p className={styles.text}>My name is Ben. I&apos;m a software enginner. This site is built with React, Babel, & Webpack.</p>
+    <a href="" onClick={handleClick}>Switch to Vue.js</a>
+  </Page>
 );
 
 export default Home;
