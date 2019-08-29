@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.item > div {
+  font-size: 0.8em;
+}
