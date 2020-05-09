@@ -15,9 +15,9 @@ export const MusicLinks = [
 
 export const WritingLinks = [
   {
-    label: 'Minor League All American Dance Club (Coming soon)',
+    label: 'Minor League All American Dance Club',
     postLabel: 'Toho Publishing',
-    url: 'https://www.tohopub.com/event-info/3-7-20-chapbook-series-1-books-launch'
+    url: 'https://www.tohopub.com/product-page/minor-league-all-american-dance-club-ben-saff'
   },
   {
     label: 'so many noises',
