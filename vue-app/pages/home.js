@@ -17,7 +17,7 @@ Vue.component('home-page', {
       <br />
       I&apos;m a software engineer based in Philadelphia.
       <br/>
-      I built this site using React; no templates or boilerplates.
+      I built this site using Vue.js.
       <br />
       You can view the source code <a href=${SOURCE_CODE_URL}>here.</a>
       <br />
