@@ -9,7 +9,17 @@ const handleClick = () => {
 
 const Home = () => (
   <Page title="hello">
-    <p className={styles.text}>My name is Ben. I&apos;m a software enginner. This site is built with React, Babel, & Webpack.</p>
+    <p className={styles.text}>
+      My name is Ben.
+      <br />
+      I&apos;m a software engineer based in Philadelphia.
+      <br/>
+      I built this site using React; no templates or boilerplates.
+      <br />
+      I love reading and occassionally writing poems, too.
+      <br />
+      My first book of poetry can be purchased <a href={'https://www.tohopub.com/product-page/minor-league-all-american-dance-club-ben-saff'}>here.</a>
+    </p>
     <a href="" onClick={handleClick}>Switch to Vue.js</a>
   </Page>
 );
