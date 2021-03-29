@@ -33,7 +33,7 @@
     "eslint": "^7.6.0",
     "eslint-plugin-react": "^7.14.3",
     "file-loader": "^6.0.0",
-    "husky": "^4.2.5",
+    "husky": "^6.0.0",
     "postcss-loader": "^3.0.0",
     "precss": "^4.0.0",
     "style-loader": "^1.0.0",
