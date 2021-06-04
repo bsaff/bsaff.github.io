@@ -14,11 +14,13 @@ const Home = () => (
       <br />
       I&apos;m a software engineer based in Philadelphia.
       <br/>
-      I built this site using React; no templates or boilerplates.
+      I built this site using React – no templates or boilerplates.
       <br />
-      I love reading and occassionally writing poems, too.
+      I enjoy reading books and occassionally writing for fun.
       <br />
       My first book of poetry can be purchased <a href={'https://www.tohopub.com/product-page/minor-league-all-american-dance-club-ben-saff'}>here.</a>
+      <br /> 
+      To whomever is reading this, I wish you well :)
     </p>
     <a href="" onClick={handleClick}>Switch to Vue.js</a>
   </Page>
