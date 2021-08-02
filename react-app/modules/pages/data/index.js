@@ -15,6 +15,11 @@ export const MusicLinks = [
 
 export const WritingLinks = [
   {
+    label: 'Calculating Time',
+    postLabel: 'Toho Journal: Vol 3, No 1',
+    url: 'https://www.tohopub.com/product-page/toho-journal-resilience-vol-3-no-1'
+  },
+  {
     label: 'Minor League All American Dance Club',
     postLabel: 'Toho Publishing',
     url: 'https://www.tohopub.com/product-page/minor-league-all-american-dance-club-ben-saff'
@@ -26,7 +31,7 @@ export const WritingLinks = [
   },
   {
     label: 'a line describes',
-    postLabel: 'Toho Journal',
+    postLabel: 'Toho Journal: Vol 1, No 1',
     url: 'https://www.tohopub.com/product-page/toho-journal-unity-vol-1-no-1'
   },
   {
