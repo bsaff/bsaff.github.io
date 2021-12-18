@@ -6,7 +6,7 @@ import Logo from '../assets/bsaff-red-logo.jpg';
 const Nav = () => (
   <nav>
     <div className={styles.header}>
-      <img src={Logo} alt="Ben's face on a whiteboard" />
+      <img src={Logo} alt="Ben's face on a whiteboard" title="My big dome in profile, draw by a friend. Expo on whiteboard."/>
     </div>
     <div className={styles.links}>
       <Link to="/">home</Link>
