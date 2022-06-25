@@ -1,6 +1,6 @@
-import '../pages/home';
-import '../pages/music';
-import '../pages/writing';
+import Home from '../pages/home';
+import Music from '../pages/music.vue';
+import Writing from '../pages/writing';
 
 export const ROUTES = {
   HOME: '#home',
@@ -11,9 +11,9 @@ export const ROUTES = {
 const NotFound = { template: '<p>Not found</p>' };
 
 const ROUTER = {
-  [ROUTES.HOME]: 'home-page',
-  [ROUTES.MUSIC]: 'music-page',
-  [ROUTES.WRITING]: 'writing-page'
+  [ROUTES.HOME]: Home,
+  [ROUTES.MUSIC]: Music,
+  [ROUTES.WRITING]: Writing
 };
 
 export const getTemplate = location => ROUTER[location] || NotFound
