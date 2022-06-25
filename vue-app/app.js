@@ -1,31 +1,31 @@
-import './components/nav';
-import './layouts/body';
+import nav from './components/nav';
+import page from './components/page';
 import { getTemplate, ROUTES } from './router/routes';
 import './css/index.css';
 
 // set default location
 window.location.hash = ROUTES.HOME;
 
-const app = new Vue({
-  el: '#app',
-  data: {
-    currentRoute: window.location.hash
-  },
-  computed: {
-    ViewComponent() {
-      return getTemplate(this.currentRoute);
+const app = Vue.createApp({
+  data() {
+    return {
+      currentPath: window.location.hash
     }
   },
-  render(createElement) {
-    return createElement('div', [
-      createElement('b-nav'),
-      createElement('b-body', [
-        createElement(this.ViewComponent)
-      ])
-    ]);
+  computed: {
+    currentView() {
+      return getTemplate(this.currentPath);
+    }
   }
 });
 
-window.addEventListener('hashchange', function() {
+window.addEventListener('hashchange', function () {
   app.currentRoute = window.location.hash;
 });
+
+app
+  .component('page', page)
+  .component('b_nav', nav);
+
+
+app.mount('#app');
