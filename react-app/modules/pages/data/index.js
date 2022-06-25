@@ -15,24 +15,28 @@ export const MusicLinks = [
 
 export const WritingLinks = [
   {
+    label: 'Time Makes a Sharp Stone Smooth',
+    postLabel: 'Brooklyn Aikikai Journal: Vol 3, No 2',
+    url: 'https://www.brooklynaikikai.com/'
+  },
+  {
     label: 'Calculating Time',
     postLabel: 'Toho Journal: Vol 3, No 1',
-    url: 'https://www.tohopub.com/product-page/toho-journal-resilience-vol-3-no-1'
   },
   {
     label: 'Minor League All American Dance Club',
     postLabel: 'Toho Publishing',
-    url: 'https://www.tohopub.com/product-page/minor-league-all-american-dance-club-ben-saff'
+    url: 'https://www.amazon.com/minor-league-american-Publishing-Chapbook/dp/1734499214'
   },
   {
-    label: 'so many noises',
+    label: 'So Many Noises',
     postLabel: 'Recenter Press',
     url: 'http://www.recenterpress.com/issue-one-benjamin-saff.html'
   },
   {
     label: 'a line describes',
     postLabel: 'Toho Journal: Vol 1, No 1',
-    url: 'https://www.tohopub.com/product-page/toho-journal-unity-vol-1-no-1'
+    url: 'https://www.amazon.com/Toho-Journal-Unity-Vol-Literary/dp/1733657533'
   },
   {
     label: 'Considering the Burrito',
