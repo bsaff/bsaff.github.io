@@ -20,5 +20,9 @@ $imageHeight: 200px;
 .links > a {
   flex: 1 1 150px;
   text-align: center;
-  color: rgba(0, 0, 0, 1);
+  color: rgb(14, 14, 14);
+}
+
+.links:hover {
+  color: rgb(50, 22, 22) !important;
 }

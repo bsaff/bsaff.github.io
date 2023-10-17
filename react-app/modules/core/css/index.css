@@ -25,6 +25,7 @@ h1 {
 a {
   color: var(--link-color);
   transition: color ease 0.25s;
+  text-decoration: none;
 }
 
 a:hover {

@@ -20,6 +20,11 @@ export const WritingLinks = [
     url: 'https://www.brooklynaikikai.com/'
   },
   {
+    label: 'Living Room Dance with Izzy',
+    postLabel: 'Moonstone Press: 2021 Featured Poets Anthology',
+    url: 'https://moonstone-arts-center.square.site/product/2021-featured-poets-anthology/325?cs=true&cst=custom'
+  },
+  {
     label: 'Calculating Time',
     postLabel: 'Toho Journal: Vol 3, No 1',
   },
@@ -63,4 +68,17 @@ export const WritingLinks = [
     postLabel: 'Asymptote Journal',
     url: 'https://www.asymptotejournal.com/blog/2018/05/24/in-review-the-emissary-by-yoko-tawada/'
   }
+];
+
+export const EditingLinks = [
+  {
+    label: 'Rules of Sculpture (2023)',
+    postLabel: 'Caroline Furr',
+    url: 'https://www.amazon.com/Rules-Sculpture-Caroline-Furr/dp/B0C6C62676'
+  },
+  {
+    label: 'Stand While Lifting (2024, Forthcoming)',
+    postLabel: 'Caroline Furr'
+  },
+
 ];
