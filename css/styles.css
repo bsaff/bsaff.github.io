@@ -21,8 +21,22 @@ body {
   padding: 20px;
 }
 
+body::before {
+  content: "";
+  position: fixed; /* or absolute, depending on context */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/background.png");
+  background-repeat: repeat;
+  opacity: 0.25; /* adjust for subtlety */
+  z-index: -1; /* keep it behind your content */
+  pointer-events: none; /* ensures it doesn’t interfere with clicks */
+}
+
 #app {
-  animation: fadeIn 500ms ease;
+  animation: fadeIn 500ms ease-in-out;
 }
 
 .avatar {
