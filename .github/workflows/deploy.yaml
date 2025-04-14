@@ -27,13 +27,7 @@ jobs:
       - name: 🛠️ Build Astro
         run: npm run build
 
-      - name: 🔍 Pre-download upload-artifact@v3
-        uses: actions/upload-artifact@v3
-        with:
-          name: workaround
-          path: README.md
-
       - name: 📦 Upload site artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist
