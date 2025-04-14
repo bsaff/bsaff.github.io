@@ -23,7 +23,7 @@ jobs:
       - name: 🛠️ Build Astro
         run: npm run build
 
-      - name: 📂 Upload built site to GitHub Pages
+      - name: 📦 Upload site artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: dist
