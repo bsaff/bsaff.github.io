@@ -1,11 +1,15 @@
-# bsaff.github.io
-## Run locally
+# Benjamin Saff's Personal Website
 
-Run the following commands
+A simple personal website built with HTML and CSS.
 
-1. `npm i` (install dependencies)
-1. `yarn start` (start dev server)
+## Structure
 
-## Build for static site
+- `index.html` - Home page
+- `writing.html` - Writing page
+- `music.html` - Music page
+- `css/styles.css` - Shared styles
+- `favicon/` - Favicon assets
 
-1. `npm run build`
+## Development
+
+No build process or dependencies required. Simply open any HTML file in a web browser to view the site.
