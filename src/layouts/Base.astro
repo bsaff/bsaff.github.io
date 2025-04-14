@@ -40,8 +40,10 @@ import "../styles/global.css";
 
       <nav class="main-nav">
         <a href="index.html" class={Astro.url.pathname === "/" ? "active" : ""}>Home</a>
-        <a href="writing.html" class={Astro.url.pathname === "/writing" ? "active" : ""}>Writing</a>
-        <a href="music.html" class={Astro.url.pathname === "/music" ? "active" : ""}>Music</a>
+        <a href="writing.html" class={Astro.url.pathname === "/writing.html" ? "active" : ""}
+          >Writing</a
+        >
+        <a href="music.html" class={Astro.url.pathname === "/music.html" ? "active" : ""}>Music</a>
       </nav>
 
       <section class="page active">
