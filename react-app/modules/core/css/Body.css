@@ -1,9 +1,0 @@
-@import './animations.css';
-
-.wrapper {
-  padding: 20px;
-  margin-bottom: 20px; /* for footer */
-  * {
-    animation: fadeIn 250ms ease;
-  }
-}
