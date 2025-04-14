@@ -34,14 +34,14 @@ import "../styles/global.css";
   <body>
     <main id="app">
       <div class="profile-header">
-        <img src="/avatar.jpg" alt="Benjamin Saff" class="avatar" loading="eager" />
+        <img src="avatar.jpg" alt="Benjamin Saff" class="avatar" loading="eager" />
         <h1>Benjamin Saff</h1>
       </div>
 
       <nav class="main-nav">
-        <a href="/" class={Astro.url.pathname === "/" ? "active" : ""}>Home</a>
-        <a href="/writing" class={Astro.url.pathname === "/writing" ? "active" : ""}>Writing</a>
-        <a href="/music" class={Astro.url.pathname === "/music" ? "active" : ""}>Music</a>
+        <a href="index.html" class={Astro.url.pathname === "/" ? "active" : ""}>Home</a>
+        <a href="writing.html" class={Astro.url.pathname === "/writing" ? "active" : ""}>Writing</a>
+        <a href="music.html" class={Astro.url.pathname === "/music" ? "active" : ""}>Music</a>
       </nav>
 
       <section class="page active">
