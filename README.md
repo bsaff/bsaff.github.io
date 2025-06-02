@@ -1,4 +1,4 @@
-# Benjamin Saff's Personal Website
+# Ben's Personal Website
 
 A minimalist personal website built with [Astro](https://astro.build).
 

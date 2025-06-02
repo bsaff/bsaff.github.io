@@ -24,22 +24,23 @@ import "../styles/global.css";
     <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
     <meta name="theme-color" content="#e0a6a6" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700i&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
 
-    <title>Benjamin Saff - {title}</title>
+    <title>Ben Saff - {title}</title>
   </head>
   <body>
     <main id="app">
       <div class="profile-header">
-        <img src="avatar.jpg" alt="Benjamin Saff" class="avatar" loading="eager" />
-        <h1>Benjamin Saff</h1>
+        <img src="avatar.jpg" alt="Ben avatar" class="avatar" loading="eager" />
       </div>
 
       <nav class="main-nav">
-        <a href="index.html" class={Astro.url.pathname === "/" ? "active" : ""}>Home</a>
+        <a href="index.html" class={Astro.url.pathname === "/index.html" ? "active" : ""}>Home</a>
         <a href="writing.html" class={Astro.url.pathname === "/writing.html" ? "active" : ""}
           >Writing</a
         >
