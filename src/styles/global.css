@@ -1,6 +1,5 @@
 :root {
   --link-color: firebrick;
-  --link-color-hover: #419f24;
   --tap-highlight: #fbfefe;
 }
 
@@ -82,8 +81,14 @@ p {
   padding: 0.5rem;
 }
 
+.main-nav a:hover {
+  filter: hue-rotate(120deg); /* Red → Green */
+  text-decoration: underline dotted;
+}
+
 .main-nav a.active {
   text-decoration: underline dotted;
+  filter: hue-rotate(120deg); /* Red → Green */
 }
 
 .link-list {
