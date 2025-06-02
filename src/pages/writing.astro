@@ -1,109 +1,132 @@
 ---
 import BaseLayout from "../layouts/Base.astro";
+
+const writings = {
+  publishedWorks: [
+    {
+      title: "A Letter from Jeff",
+      url: "https://partnersandson.com/products/collide-zine-issue-8",
+      publication: "Collide Magazine Issue #8, 2024",
+    },
+    {
+      title: "Time Makes a Sharp Stone Smooth",
+      url: "https://www.brooklynaikikai.com/",
+      publication: "Brooklyn Aikikai Journal: Vol 3, No 2",
+    },
+    {
+      title: "Living Room Dance",
+      url: "https://moonstone-arts-center.square.site/product/2021-featured-poets-anthology/325?cs=true&cst=custom",
+      publication: "Moonstone Press: 2021 Featured Poets Anthology",
+    },
+    {
+      title: "Calculating Time",
+      publication: "Toho Journal: Vol 3, No 1",
+    },
+    {
+      title: "Minor League All American Dance Club",
+      url: "https://www.amazon.com/dp/B0DDGX39LN?ref_=pe_93986420_774957520",
+      publication: "Toho Publishing",
+    },
+    {
+      title: "So Many Noises",
+      url: "http://www.recenterpress.com/issue-one-benjamin-saff.html",
+      publication: "Recenter Press",
+    },
+    {
+      title: "a line describes",
+      url: "https://www.amazon.com/Toho-Journal-Unity-Vol-Literary/dp/1733657533",
+      publication: "Toho Journal: Vol 1, No 1",
+    },
+    {
+      title: "Considering the Burrito",
+      url: "http://malarkeybooks.com/critical-analysis",
+      publication: "Marlarkey Books",
+    },
+    {
+      title: "Eastern Wisdom for the Broken Heart",
+      url: "https://thoughtcatalog.com/ben-saff/2016/04/5-eastern-wisdoms-to-help-heal-your-broken-heart/",
+      publication: "Thought Catalog",
+    },
+  ],
+  bookReviews: [
+    {
+      title: "In Review: Tokyo Ueno Station by Yū Miri",
+      url: "https://www.asymptotejournal.com/blog/2019/03/11/misshapen-shards-yu-miris-tokyo-ueno-station-in-review/",
+      publication: "Asymptote Journal",
+    },
+    {
+      title: "In Review: The Samurai by Shūsaku Endō",
+      url: "https://www.asymptotejournal.com/blog/2018/10/11/a-journey-of-faith-shusaku-endos-the-samurai-in-review/",
+      publication: "Asymptote Journal",
+    },
+    {
+      title: "In Review: The Emissary by Yoko Tawada",
+      url: "https://www.asymptotejournal.com/blog/2018/05/24/in-review-the-emissary-by-yoko-tawada/",
+      publication: "Asymptote Journal",
+    },
+  ],
+  editing: [
+    {
+      title: "Rules of Sculpture (2023)",
+      url: "https://www.amazon.com/Rules-Sculpture-Caroline-Furr/dp/B0C6C62676",
+      publication: "Caroline Furr",
+    },
+    {
+      title: "Stand Before Lifting (2025, Forthcoming)",
+      publication: "Caroline Furr",
+    },
+  ],
+};
 ---
 
 <BaseLayout title="Writing">
   <h1>Published Works</h1>
   <ul class="link-list">
-    <li>
-      <a href="https://www.brooklynaikikai.com/" target="_blank" rel="noreferrer"
-        >Time Makes a Sharp Stone Smooth</a
-      >
-      <span class="post-label">Brooklyn Aikikai Journal: Vol 3, No 2</span>
-    </li>
-    <li>
-      <a
-        href="https://moonstone-arts-center.square.site/product/2021-featured-poets-anthology/325?cs=true&cst=custom"
-        target="_blank"
-        rel="noreferrer">Living Room Dance</a
-      >
-      <span class="post-label">Moonstone Press: 2021 Featured Poets Anthology</span>
-    </li>
-    <li>
-      <span>Calculating Time</span>
-      <span class="post-label">Toho Journal: Vol 3, No 1</span>
-    </li>
-    <li>
-      <a
-        href="https://www.amazon.com/dp/B0DDGX39LN?ref_=pe_93986420_774957520"
-        target="_blank"
-        rel="noreferrer">Minor League All American Dance Club</a
-      >
-      <span class="post-label">Toho Publishing</span>
-    </li>
-    <li>
-      <a
-        href="http://www.recenterpress.com/issue-one-benjamin-saff.html"
-        target="_blank"
-        rel="noreferrer">So Many Noises</a
-      >
-      <span class="post-label">Recenter Press</span>
-    </li>
-    <li>
-      <a
-        href="https://www.amazon.com/Toho-Journal-Unity-Vol-Literary/dp/1733657533"
-        target="_blank"
-        rel="noreferrer">a line describes</a
-      >
-      <span class="post-label">Toho Journal: Vol 1, No 1</span>
-    </li>
-    <li>
-      <a href="http://malarkeybooks.com/critical-analysis" target="_blank" rel="noreferrer"
-        >Considering the Burrito</a
-      >
-      <span class="post-label">Marlarkey Books</span>
-    </li>
-    <li>
-      <a
-        href="https://thoughtcatalog.com/ben-saff/2016/04/5-eastern-wisdoms-to-help-heal-your-broken-heart/"
-        target="_blank"
-        rel="noreferrer">Eastern Wisdom for the Broken Heart</a
-      >
-      <span class="post-label">Thought Catalog</span>
-    </li>
+    {
+      writings.publishedWorks.map((work) => (
+        <li>
+          {work.url ? (
+            <a href={work.url} target="_blank" rel="noreferrer">
+              {work.title}
+            </a>
+          ) : (
+            <span>{work.title}</span>
+          )}
+          <span class="post-label">{work.publication}</span>
+        </li>
+      ))
+    }
   </ul>
 
   <h1>Book Reviews</h1>
   <ul class="link-list">
-    <li>
-      <a
-        href="https://www.asymptotejournal.com/blog/2019/03/11/misshapen-shards-yu-miris-tokyo-ueno-station-in-review/"
-        target="_blank"
-        rel="noreferrer">In Review: Tokyo Ueno Station by Yū Miri</a
-      >
-      <span class="post-label">Asymptote Journal</span>
-    </li>
-    <li>
-      <a
-        href="https://www.asymptotejournal.com/blog/2018/10/11/a-journey-of-faith-shusaku-endos-the-samurai-in-review/"
-        target="_blank"
-        rel="noreferrer">In Review: The Samurai by Shūsaku Endō</a
-      >
-      <span class="post-label">Asymptote Journal</span>
-    </li>
-    <li>
-      <a
-        href="https://www.asymptotejournal.com/blog/2018/05/24/in-review-the-emissary-by-yoko-tawada/"
-        target="_blank"
-        rel="noreferrer">In Review: The Emissary by Yoko Tawada</a
-      >
-      <span class="post-label">Asymptote Journal</span>
-    </li>
+    {
+      writings.bookReviews.map((review) => (
+        <li>
+          <a href={review.url} target="_blank" rel="noreferrer">
+            {review.title}
+          </a>
+          <span class="post-label">{review.publication}</span>
+        </li>
+      ))
+    }
   </ul>
 
   <h1>Editing</h1>
   <ul class="link-list">
-    <li>
-      <a
-        href="https://www.amazon.com/Rules-Sculpture-Caroline-Furr/dp/B0C6C62676"
-        target="_blank"
-        rel="noreferrer">Rules of Sculpture (2023)</a
-      >
-      <span class="post-label">Caroline Furr</span>
-    </li>
-    <li>
-      <span>Stand Before Lifting (2025, Forthcoming)</span>
-      <span class="post-label">Caroline Furr</span>
-    </li>
+    {
+      writings.editing.map((edit) => (
+        <li>
+          {edit.url ? (
+            <a href={edit.url} target="_blank" rel="noreferrer">
+              {edit.title}
+            </a>
+          ) : (
+            <span>{edit.title}</span>
+          )}
+          <span class="post-label">{edit.publication}</span>
+        </li>
+      ))
+    }
   </ul>
 </BaseLayout>
