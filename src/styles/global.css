@@ -21,7 +21,7 @@ body::before {
   height: 100%;
   background-image: url("bg.png");
   background-size: 900px;
-  opacity: 0.1;
+  opacity: 0.035;
   z-index: -1;
   pointer-events: none;
 }
