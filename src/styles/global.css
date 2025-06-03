@@ -89,6 +89,7 @@ p {
 .main-nav a {
   padding: 0.5rem;
   transition: filter 0.3s ease;
+  flex-shrink: 0;
 }
 
 .main-nav a:hover {
