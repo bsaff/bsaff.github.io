@@ -9,7 +9,7 @@ body {
   font-family: 'Ancizar Serif', Georgia, serif;
   -webkit-tap-highlight-color: var(--tap-highlight);
   padding: 20px;
-  background-color: rgb(255, 245, 245);
+  background-color: rgb(255, 248, 248);
 }
 
 body::before {
@@ -26,6 +26,15 @@ body::before {
   pointer-events: none;
 }
 
+@keyframes colorShift {
+  0% {
+    filter: hue-rotate(0deg); /* Red */
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
 .avatar {
   width: 120px;
   height: 120px;
@@ -34,15 +43,13 @@ body::before {
   display: block;
   object-fit: cover;
   mix-blend-mode: multiply;
-}
-
-.avatar{
   transition: filter 0.3s ease;
 }
 
 .avatar:hover {
-  filter: hue-rotate(120deg); /* Red → Green */
+  animation: colorShift 3s linear infinite;
 }
+
 
 .profile-header {
   text-align: center;
@@ -57,14 +64,15 @@ h1 {
 
 a {
   color: var(--link-color);
-  transition: color ease 0.25s;
+  transition: color ease 0.25s, filter 0.3s ease;
   text-decoration: none;
 }
 
 a:hover {
-  filter: hue-rotate(120deg); /* Red → Green */
+  animation: colorShift 3s linear infinite;
   text-decoration: underline dotted;
 }
+
 
 p {
   line-height: 1.6;
@@ -79,16 +87,21 @@ p {
 
 .main-nav a {
   padding: 0.5rem;
+  transition: filter 0.3s ease;
 }
 
 .main-nav a:hover {
-  filter: hue-rotate(120deg); /* Red → Green */
+  animation: colorShift 3s linear infinite;
   text-decoration: underline dotted;
 }
 
+
 .main-nav a.active {
   text-decoration: underline dotted;
-  filter: hue-rotate(120deg); /* Red → Green */
+}
+
+.main-nav a.active:hover {
+  filter: hue-rotate(200deg); /* Green → Blue */
 }
 
 .link-list {
