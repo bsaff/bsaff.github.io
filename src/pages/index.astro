@@ -1,31 +1,52 @@
 ---
 import BaseLayout from "../layouts/Base.astro";
+import styles from "./index.module.css";
+import Typewriter from "../components/Typewriter.jsx";
 ---
 
 <BaseLayout title="Home">
-  <p>
-    Hello! I'm Ben and I work as software engineer in Philadelphia. I like living here—I'm never
-    more than a short bike ride away from wonderful <a
-      href="https://www.paradigmarts.org/"
-      target="_blank"
-      rel="noreferrer">art galleries</a
-    >, <a href="https://utphilly.com/" target="_blank" rel="noreferrer">concerts</a>, <a
-      href="http://royalsushiandizakaya.com/"
-      target="_blank"
-      rel="noreferrer">restaurants</a
-    >, and parks. In my free time I enjoy
-    <a href="https://www.goodreads.com/user/show/23506884-ben-saff" target="_blank" rel="noreferrer"
-      >reading</a
-    >, writing, music, meditation, yoga, and <a href="https://www.lemonhillaikido.com/">aikido</a>.
-    Whereever and whoever you are, I wish you peace and good health ✌️
-  </p>
-  <hr />
-  <p>
-    In philosophy, a sound conclusion follows logically from well-examined premises. The same
-    principle applies when choosing tools for building web apps. If we default to popular frameworks
-    without respect to the specifics of what we want to build, we should be skeptical that we've
-    made the best choice. <a href="https://github.com/bsaff"
-      ><img src="github-mark.svg" width="14" /></a
-    >
-  </p></BaseLayout
->
+  <section class={styles.introCard}>
+    <div class={styles.headerRow}>
+      <img src="/avatar.jpg" alt="Ben Saff avatar" class={styles.avatar} />
+      <div class={styles.introTextCol}>
+        <Typewriter text="Hello, I'm Ben Saff" className={styles.mainHeader} client:load />
+        <p class={styles.oneLiner}>
+          I'm a full stack product engineer;
+          <br />
+          Transmuting ideas into technology ⚡️
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class={styles.pageSection}>
+    <h2>About My Work</h2>
+    <p>
+      With a decade of experience building products for startups in Philadelphia and remote teams
+      across the US, I employ a designer's care for people and an engineer's pragmatism to transform
+      ideas into wonderful software. I value simple, well-tested code. I bring a playful spirit and
+      strive for harmony when building with my fellow humans. Software is one of many ways we can
+      shape our world for the better—let's do it! 🚀
+    </p>
+  </section>
+  <section class={styles.pageSection}>
+    <h2>About Me</h2>
+    <p>
+      I've lived in Philadelphia for many years and like it here—I'm never more than a short bike
+      ride away from wonderful <a
+        href="https://www.paradigmarts.org/"
+        target="_blank"
+        rel="noreferrer">art galleries</a
+      >, <a href="https://utphilly.com/" target="_blank" rel="noreferrer">concerts</a>, <a
+        href="http://royalsushiandizakaya.com/"
+        target="_blank"
+        rel="noreferrer">restaurants</a
+      >, and parks. In my free time I enjoy
+      <a
+        href="https://www.goodreads.com/user/show/23506884-ben-saff"
+        target="_blank"
+        rel="noreferrer">reading</a
+      >, writing, music, meditation, yoga, and <a href="https://www.lemonhillaikido.com/">aikido</a
+      >. Whereever and whoever you are, I wish you peace and good health ✌️
+    </p>
+  </section>
+</BaseLayout>

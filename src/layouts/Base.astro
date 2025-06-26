@@ -4,6 +4,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+import styles from "./Base.module.css";
 import "../styles/global.css";
 ---
 
@@ -35,16 +36,18 @@ import "../styles/global.css";
   </head>
   <body>
     <main id="app">
-      <div class="profile-header">
-        <img src="avatar.jpg" alt="Ben avatar" class="avatar" loading="eager" />
-      </div>
-
-      <nav class="main-nav">
-        <a href="index.html" class={Astro.url.pathname === "/index.html" ? "active" : ""}>Home</a>
-        <a href="writing.html" class={Astro.url.pathname === "/writing.html" ? "active" : ""}
-          >Writing</a
-        >
-        <a href="music.html" class={Astro.url.pathname === "/music.html" ? "active" : ""}>Music</a>
+      <nav class={styles.navbar}>
+        <ul class={styles.navLinks}>
+          <li><a href="/">HOME</a></li>
+          <li><a href="/music">MUSIC</a></li>
+          <li><a href="/writing">WRITING</a></li>
+          <li><a href="https://github.com/bsaff" target="_blank" rel="noopener">GITHUB</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/bensaff/" target="_blank" rel="noopener"
+              >LINKEDIN</a
+            >
+          </li>
+        </ul>
       </nav>
 
       <section class="page active">
