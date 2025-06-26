@@ -14,7 +14,8 @@ body {
   font-family: 'Ancizar Serif', Georgia, serif;
   -webkit-tap-highlight-color: var(--tap-highlight);
   padding: 20px;
-  background-color: rgb(255, 248, 248);
+  background: linear-gradient(to bottom, #fff, rgb(255, 248, 248));
+  height: 100vh;
   font-size: 1rem;
 }
 
