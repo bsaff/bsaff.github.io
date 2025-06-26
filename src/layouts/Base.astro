@@ -6,6 +6,7 @@ interface Props {
 const { title } = Astro.props;
 import styles from "./Base.module.css";
 import "../styles/global.css";
+const currentPath = Astro.url.pathname;
 ---
 
 <!doctype html>
@@ -38,13 +39,15 @@ import "../styles/global.css";
     <main id="app">
       <nav class={styles.navbar}>
         <ul class={styles.navLinks}>
-          <li><a href="/">HOME</a></li>
-          <li><a href="/music">MUSIC</a></li>
-          <li><a href="/writing">WRITING</a></li>
+          <li><a href="/" class={currentPath === "/" ? "active" : ""}>HOME</a></li>
+          <li><a href="/music" class={currentPath === "/music" ? "active" : ""}>MUSIC</a></li>
+          <li><a href="/writing" class={currentPath === "/writing" ? "active" : ""}>WRITING</a></li>
           <li><a href="https://github.com/bsaff" target="_blank" rel="noopener">GITHUB</a></li>
           <li>
-            <a href="https://www.linkedin.com/in/bensaff/" target="_blank" rel="noopener"
-              >LINKEDIN</a
+            <a
+              href="https://www.linkedin.com/in/benjamin-saff-4678085a/"
+              target="_blank"
+              rel="noopener">LINKEDIN</a
             >
           </li>
         </ul>
