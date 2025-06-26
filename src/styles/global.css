@@ -126,28 +126,6 @@ p {
   filter: hue-rotate(200deg); /* Green → Blue */
 }
 
-.link-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.link-list li {
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.link-list a {
-  display: inline-block;
-}
-
-.post-label {
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: 0.25rem;
-}
-
 hr {
   width: 20px;
   opacity: .8;

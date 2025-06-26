@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/Base.astro";
+import styles from "./writing.module.css";
 
 const writings = {
   publishedWorks: [
@@ -80,53 +81,55 @@ const writings = {
 ---
 
 <BaseLayout title="Writing">
-  <h1>Published Works</h1>
-  <ul class="link-list">
-    {
-      writings.publishedWorks.map((work) => (
-        <li>
-          {work.url ? (
-            <a href={work.url} target="_blank" rel="noreferrer">
-              {work.title}
-            </a>
-          ) : (
-            <span>{work.title}</span>
-          )}
-          <span class="post-label">{work.publication}</span>
-        </li>
-      ))
-    }
-  </ul>
+  <div class={styles.writingContent}>
+    <h1>Published Works</h1>
+    <ul class={styles.linkList}>
+      {
+        writings.publishedWorks.map((work) => (
+          <li>
+            {work.url ? (
+              <a href={work.url} target="_blank" rel="noreferrer">
+                {work.title}
+              </a>
+            ) : (
+              <span>{work.title}</span>
+            )}
+            <span class={styles.postLabel}>{work.publication}</span>
+          </li>
+        ))
+      }
+    </ul>
 
-  <h1>Book Reviews</h1>
-  <ul class="link-list">
-    {
-      writings.bookReviews.map((review) => (
-        <li>
-          <a href={review.url} target="_blank" rel="noreferrer">
-            {review.title}
-          </a>
-          <span class="post-label">{review.publication}</span>
-        </li>
-      ))
-    }
-  </ul>
-
-  <h1>Editing</h1>
-  <ul class="link-list">
-    {
-      writings.editing.map((edit) => (
-        <li>
-          {edit.url ? (
-            <a href={edit.url} target="_blank" rel="noreferrer">
-              {edit.title}
+    <h1>Book Reviews</h1>
+    <ul class={styles.linkList}>
+      {
+        writings.bookReviews.map((review) => (
+          <li>
+            <a href={review.url} target="_blank" rel="noreferrer">
+              {review.title}
             </a>
-          ) : (
-            <span>{edit.title}</span>
-          )}
-          <span class="post-label">{edit.publication}</span>
-        </li>
-      ))
-    }
-  </ul>
+            <span class={styles.postLabel}>{review.publication}</span>
+          </li>
+        ))
+      }
+    </ul>
+
+    <h1>Editing</h1>
+    <ul class={styles.linkList}>
+      {
+        writings.editing.map((edit) => (
+          <li>
+            {edit.url ? (
+              <a href={edit.url} target="_blank" rel="noreferrer">
+                {edit.title}
+              </a>
+            ) : (
+              <span>{edit.title}</span>
+            )}
+            <span class={styles.postLabel}>{edit.publication}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </BaseLayout>
