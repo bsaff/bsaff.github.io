@@ -40,8 +40,7 @@
   border-bottom: 2px solid rgb(236, 18, 18) !important;
 }
 
-.navLinks li a:hover,
-.navLinks li a:focus {
+.navLinks li a:hover {
   color: #0070f3;
   border-bottom: 2px solid #0070f3;
 }
