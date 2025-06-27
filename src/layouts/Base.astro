@@ -6,7 +6,7 @@ interface Props {
 const { title } = Astro.props;
 import styles from "./Base.module.css";
 import "../styles/global.css";
-import { FaHome, FaMusic, FaBook, FaGithub, FaLinkedin } from "react-icons/fa";
+import NavIcons from "../components/NavIcons.jsx";
 const currentPath = Astro.url.pathname;
 ---
 
@@ -39,42 +39,7 @@ const currentPath = Astro.url.pathname;
   <body>
     <main id="app">
       <nav class={styles.navbar}>
-        <ul class={styles.navLinks}>
-          <li>
-            <a href="/" class={currentPath === "/" ? "active" : ""}>
-              <span class="nav-icon"><FaHome /></span>
-              <span class="nav-label">HOME</span>
-            </a>
-          </li>
-          <li>
-            <a href="/music" class={currentPath === "/music" ? "active" : ""}>
-              <span class="nav-icon"><FaMusic /></span>
-              <span class="nav-label">MUSIC</span>
-            </a>
-          </li>
-          <li>
-            <a href="/writing" class={currentPath === "/writing" ? "active" : ""}>
-              <span class="nav-icon"><FaBook /></span>
-              <span class="nav-label">WRITING</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/bsaff" target="_blank" rel="noopener">
-              <span class="nav-icon"><FaGithub /></span>
-              <span class="nav-label">GITHUB</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/benjamin-saff-4678085a/"
-              target="_blank"
-              rel="noopener"
-            >
-              <span class="nav-icon"><FaLinkedin /></span>
-              <span class="nav-label">LINKEDIN</span>
-            </a>
-          </li>
-        </ul>
+        <NavIcons currentPath={currentPath} className={styles.navLinks} client:only="react" />
       </nav>
 
       <section class="page active">
