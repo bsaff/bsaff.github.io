@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0 auto;
-  font-family: 'Ancizar Serif', Georgia, serif;
+  font-family: 'Outfit', Georgia, serif;
   -webkit-tap-highlight-color: var(--tap-highlight);
   padding: 20px;
   height: 100vh;
@@ -64,7 +64,6 @@ body::before {
 
 h1 {
   font-size: 1.1rem;
-  font-style: italic;
   margin-bottom: 0.5rem;
 }
 
@@ -97,6 +96,7 @@ a:hover {
 
 p {
   line-height: 1.6;
+  font-weight: 300;
 }
 
 .main-nav {

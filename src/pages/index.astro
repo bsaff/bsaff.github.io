@@ -20,23 +20,41 @@ import Typewriter from "../components/Typewriter.jsx";
   </section>
   <section class={styles.pageSection}>
     <h2>About Me</h2>
-    <p>
-      I've lived in Philadelphia for many years and like it here—I'm never more than a short bike
-      ride away from wonderful <a
-        href="https://www.paradigmarts.org/"
-        target="_blank"
-        rel="noreferrer">art galleries</a
-      >, <a href="https://utphilly.com/" target="_blank" rel="noreferrer">concerts</a>, <a
-        href="http://royalsushiandizakaya.com/"
-        target="_blank"
-        rel="noreferrer">restaurants</a
-      >, and parks. In my free time I enjoy
-      <a
-        href="https://www.goodreads.com/user/show/23506884-ben-saff"
-        target="_blank"
-        rel="noreferrer">reading</a
-      >, writing, music, meditation, yoga, and <a href="https://www.lemonhillaikido.com/">aikido</a
-      >. Whereever and whoever you are, I wish you peace and good health ✌️
-    </p>
+    <div class={styles.textContainer}>
+      <div class={styles.iconTextRow}>
+        <div class={styles.iconImg}>
+          <img src="/philly-sketch.png" alt="City icon" />
+        </div>
+        <p>
+          I live well in Philadelphia—I'm never more than a short bike ride away from wonderful <a
+            href="https://www.paradigmarts.org/"
+            target="_blank"
+            rel="noreferrer">art galleries</a
+          >, <a href="https://utphilly.com/" target="_blank" rel="noreferrer">concerts</a>, <a
+            href="http://royalsushiandizakaya.com/"
+            target="_blank"
+            rel="noreferrer">restaurants</a
+          >, and parks.
+        </p>
+      </div>
+      <div class={styles.iconTextRow}>
+        <img src="/hobbies.png" alt="Hobbies icon" class={styles.iconImg} />
+        <p>
+          In my free time I enjoy
+          <a
+            href="https://www.goodreads.com/user/show/23506884-ben-saff"
+            target="_blank"
+            rel="noreferrer">reading</a
+          >, writing, music, meditation, yoga, and <a href="https://www.lemonhillaikido.com/"
+            >aikido</a
+          >.
+        </p>
+      </div>
+    </div>
+    <div class={styles.wellWish}>
+      <p>
+        I wish you peace and good health in {new Date().getFullYear()}
+      </p>
+    </div>
   </section>
 </BaseLayout>

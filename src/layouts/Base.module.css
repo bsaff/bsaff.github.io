@@ -23,7 +23,7 @@
 .navLinks li a {
   text-decoration: none;
   color: #222;
-  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Outfit', 'Helvetica Neue', Arial, sans-serif;
   font-size: 1.05rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -60,7 +60,6 @@
   .nav-icon {
     display: block;
     font-size: 1.5rem;
-    margin-bottom: 0.15rem;
   }
   .nav-label {
     display: block;

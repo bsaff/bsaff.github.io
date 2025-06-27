@@ -39,8 +39,14 @@
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+  position: relative;
 }
 
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 
 
 .pageSection p {
@@ -48,6 +54,7 @@
   color: #444;
   text-align: center;
   font-size: 1.5rem;
+  line-height: 1.75;
   margin: 0 auto;
 }
 
@@ -64,6 +71,36 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.iconTextRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 700px;
+}
+
+.iconImg {
+  width: 120px;
+  height: 120px;
+  img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+  }
+  flex-shrink: 0;
+  border-radius: 9999px;
+  box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.08);
+  padding: 1rem;
+}
+
+.iconTextRow p {
+  text-align: left;
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.75;
 }
 
 @media (max-width: 600px) {
@@ -107,11 +144,38 @@
     font-size: 1.2rem;
     min-height: 500px;
   }
-  .pageSection h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
+
   .pageSection p {
     font-size: 1.2rem;
   }
+
+  .iconImg {
+    display: none;
+  }
+
+  .iconTextRow p {
+    text-align: center;
+  }
+  .wellWish {
+    padding-bottom: 5rem;
+  }
+}
+
+.wellWish {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wellWish p {
+  font-size: 0.8rem;
+  color: #888;
+  text-align: center;
+  max-width: 500px;
+  margin: 0;
+  letter-spacing: 0.01em;
+  line-height: 1.5;
 }
