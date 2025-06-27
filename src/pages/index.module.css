@@ -71,6 +71,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  min-width: 450px
 }
 
 .iconTextRow {
@@ -139,6 +140,9 @@
     &:last-of-type {
       min-height: 100vh;
     }
+  }
+  .introTextCol {
+    min-width: auto;
   }
   .pageSection {
     font-size: 1.2rem;
