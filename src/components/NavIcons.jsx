@@ -3,8 +3,8 @@ import React from 'react';
 
 const navItems = [
   { href: '/', label: 'HOME', icon: <FaHome /> },
-  { href: '/music.html', label: 'MUSIC', icon: <FaMusic /> },
   { href: '/writing.html', label: 'WRITING', icon: <FaBook /> },
+  { href: '/music.html', label: 'MUSIC', icon: <FaMusic /> },
   { href: 'https://github.com/bsaff', label: 'GITHUB', icon: <FaGithub />, external: true },
   { href: 'https://www.linkedin.com/in/benjamin-saff-4678085a/', label: 'LINKEDIN', icon: <FaLinkedin />, external: true },
 ];
