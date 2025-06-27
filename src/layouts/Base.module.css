@@ -6,7 +6,8 @@
   z-index: 100;
   display: flex;
   justify-content: center;
-  background: linear-gradient(white 80%, transparent)
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
 }
 
 .navLinks {
@@ -29,11 +30,14 @@
   transition: color 0.18s, border-bottom 0.18s;
   padding: 0.2rem 0.1rem;
   border-bottom: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 :global(a.active) {
-  color: firebrick !important;
-  border-bottom: 2px solid firebrick !important;
+  color: rgb(236, 18, 18) !important;
+  border-bottom: 2px solid rgb(236, 18, 18) !important;
 }
 
 .navLinks li a:hover,
@@ -42,16 +46,27 @@
   border-bottom: 2px solid #0070f3;
 }
 
+
 @media (max-width: 480px) {
   .navLinks {
     gap: 1.1rem;
   }
-
   .navLinks li a {
     font-size: 0.8rem;
     padding: 0.15rem 0.05rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: .25rem;
   }
-
+  .nav-icon {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 0.15rem;
+  }
+  .nav-label {
+    display: block;
+    font-size: 0.8rem;
+  }
   .navbar {
     position: fixed;
     left: 0;
