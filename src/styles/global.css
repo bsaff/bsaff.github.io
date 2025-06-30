@@ -54,15 +54,16 @@
   }
 
   a {
-    color: var(--link-color);
+    color: var(--color-red-600);
     @apply transition-colors duration-200;
     text-decoration: none;
   }
+
   a:hover {
     animation: colorShift 3s linear infinite;
   }
   a.active {
-    color: rgb(236, 18, 18) !important;
+    color: var(--color-red-600);
     border-bottom: 2px solid rgb(236, 18, 18) !important;
   }
 

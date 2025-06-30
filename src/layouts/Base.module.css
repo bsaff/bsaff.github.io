@@ -18,11 +18,18 @@
   padding: 0;
   font-weight: 400;
   align-items: center;
+
+  svg {
+    color: var(--color-gray-700);
+    transition: color 500ms;
+  }
+
+
 }
 
 .navLinks li a {
   text-decoration: none;
-  color: #222;
+  color: var(--color-gray-900);
   font-size: 1.05rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -32,12 +39,16 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+
+  &:hover {
+    svg {
+      color: var(--color-red-500);
+    }
+  }
 }
 
-.navLinks li a:hover {
-  color: #0070f3;
-  border-bottom: 2px solid #0070f3;
-}
+
+
 
 
 @media (max-width: 480px) {
