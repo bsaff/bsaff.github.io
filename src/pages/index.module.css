@@ -87,8 +87,6 @@
   width: 120px;
   height: 120px;
   img {
-    width: 120px;
-    height: 120px;
     object-fit: contain;
   }
   flex-shrink: 0;

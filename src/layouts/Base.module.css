@@ -1,14 +1,3 @@
-.navbar {
-  width: 100%;
-  padding: 1.2rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-  background: rgba(255,255,255,0.6);
-  backdrop-filter: blur(10px);
-}
 
 .navLinks {
   display: flex;
@@ -21,10 +10,7 @@
 
   svg {
     color: var(--color-gray-700);
-    transition: color 500ms;
   }
-
-
 }
 
 .navLinks li a {
@@ -39,16 +25,15 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-
+  * {
+    transition: color 1000ms;
+  }
   &:hover {
-    svg {
-      color: var(--color-red-500);
+    * {
+      color: var(--color-red-600) !important;
     }
   }
 }
-
-
-
 
 
 @media (max-width: 480px) {
@@ -61,23 +46,5 @@
     flex-direction: column;
     justify-content: center;
     gap: .25rem;
-  }
-  .nav-icon {
-    display: block;
-    font-size: 1.5rem;
-  }
-  .nav-label {
-    display: block;
-    font-size: 0.8rem;
-  }
-  .navbar {
-    position: fixed;
-    left: 0;
-    right: 0;
-    width: 100%;
-    padding: 0.7rem 0;
-    bottom: 0;
-    top: auto;
-
   }
 }
