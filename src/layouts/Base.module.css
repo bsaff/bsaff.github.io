@@ -23,7 +23,6 @@
 .navLinks li a {
   text-decoration: none;
   color: #222;
-  font-family: 'Outfit', 'Helvetica Neue', Arial, sans-serif;
   font-size: 1.05rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -33,11 +32,6 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}
-
-:global(a.active) {
-  color: rgb(236, 18, 18) !important;
-  border-bottom: 2px solid rgb(236, 18, 18) !important;
 }
 
 .navLinks li a:hover {

@@ -1,6 +1,5 @@
 ---
 import BaseLayout from "../layouts/Base.astro";
-import styles from "./writing.module.css";
 
 const writings = {
   publishedWorks: [
@@ -81,52 +80,52 @@ const writings = {
 ---
 
 <BaseLayout title="Writing">
-  <div class={styles.writingContent}>
-    <h1>Published Works</h1>
-    <ul class={styles.linkList}>
+  <div class="mx-auto max-w-[700px] w-full flex flex-col pb-16">
+    <h1 class="text-lg mb-2 font-normal">Published Works</h1>
+    <ul class="list-none p-0 m-0 mb-8 w-full max-w-[600px] flex flex-col">
       {
         writings.publishedWorks.map((work) => (
-          <li>
+          <li class="mb-4 w-full flex flex-col">
             {work.url ? (
-              <a href={work.url} target="_blank" rel="noreferrer">
+              <a href={work.url} target="_blank" rel="noreferrer" class="inline-block">
                 {work.title}
               </a>
             ) : (
               <span>{work.title}</span>
             )}
-            <span class={styles.postLabel}>{work.publication}</span>
+            <span class="text-sm text-gray-600 mt-1 text-left">{work.publication}</span>
           </li>
         ))
       }
     </ul>
 
-    <h1>Book Reviews</h1>
-    <ul class={styles.linkList}>
+    <h1 class="text-sm mb-2 font-normal">Book Reviews</h1>
+    <ul class="list-none p-0 m-0 mb-8 w-full max-w-[600px] flex flex-col">
       {
         writings.bookReviews.map((review) => (
-          <li>
-            <a href={review.url} target="_blank" rel="noreferrer">
+          <li class="mb-4 w-full flex flex-col">
+            <a href={review.url} target="_blank" rel="noreferrer" class="inline-block">
               {review.title}
             </a>
-            <span class={styles.postLabel}>{review.publication}</span>
+            <span class="text-sm text-gray-600 mt-1">{review.publication}</span>
           </li>
         ))
       }
     </ul>
 
-    <h1>Editing</h1>
-    <ul class={styles.linkList}>
+    <h1 class="text-sm mb-2 font-normal">Editing</h1>
+    <ul class="list-none p-0 m-0 w-full max-w-[600px] flex flex-col">
       {
         writings.editing.map((edit) => (
-          <li>
+          <li class="mb-4 w-full flex flex-col">
             {edit.url ? (
-              <a href={edit.url} target="_blank" rel="noreferrer">
+              <a href={edit.url} target="_blank" rel="noreferrer" class="inline-block">
                 {edit.title}
               </a>
             ) : (
               <span>{edit.title}</span>
             )}
-            <span class={styles.postLabel}>{edit.publication}</span>
+            <span class="text-sm text-gray-600 mt-1 ">{edit.publication}</span>
           </li>
         ))
       }

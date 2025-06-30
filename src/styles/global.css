@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --link-color: rgb(236, 18, 18);
   --tap-highlight: #fbfefe;
@@ -62,17 +64,6 @@ body::before {
   margin-bottom: 1rem;
 }
 
-h1 {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  text-align: center;
-}
 
 @media (max-width: 480px) {
 
@@ -82,51 +73,22 @@ h2 {
   }
 }
 
-a {
-  color: var(--link-color);
-  transition: color ease 0.25s, filter 0.3s ease;
-  text-decoration: none;
-}
+@layer base {
+  a {
+    color: var(--link-color);
+    @apply transition-colors duration-200;
+    text-decoration: none;
+  }
+  a:hover {
+    animation: colorShift 3s linear infinite;
+  }
+  a.active {
+    color: rgb(236, 18, 18) !important;
+    border-bottom: 2px solid rgb(236, 18, 18) !important;
+  }
 
-a:hover {
-  animation: colorShift 3s linear infinite;
-  text-decoration: underline dotted;
-}
-
-
-p {
-  line-height: 1.6;
-  font-weight: 300;
-}
-
-.main-nav {
-  margin-bottom: 2rem;
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.main-nav a {
-  padding: 0.5rem;
-  transition: filter 0.3s ease;
-  flex-shrink: 0;
-}
-
-.main-nav a:hover {
-  animation: colorShift 3s linear infinite;
-  text-decoration: underline dotted;
-}
-
-
-.main-nav a.active {
-  text-decoration: underline dotted;
-}
-
-.main-nav a.active:hover {
-  filter: hue-rotate(200deg); /* Green → Blue */
-}
-
-hr {
-  width: 20px;
-  opacity: .8;
+  p {
+    line-height: 1.6;
+    font-weight: 300;
+  }
 }

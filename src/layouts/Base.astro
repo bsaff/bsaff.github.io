@@ -38,7 +38,9 @@ const currentPath = Astro.url.pathname;
   </head>
   <body>
     <main id="app">
-      <nav class={styles.navbar}>
+      <nav
+        class="w-full flex justify-center z-50 backdrop-blur fixed left-0 right-0 bottom-0 top-auto py-2 sm:sticky sm:top-0 sm:bottom-auto sm:py-4"
+      >
         <NavIcons currentPath={currentPath} className={styles.navLinks} client:only="react" />
       </nav>
 
