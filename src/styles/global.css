@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300..900&display=swap');
 @import "tailwindcss";
 
+@view-transition {
+  navigation: auto;
+}
+
 :root {
   --tap-highlight: #fbfefe;
 }
