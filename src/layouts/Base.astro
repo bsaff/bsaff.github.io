@@ -27,12 +27,13 @@ const currentPath = Astro.url.pathname;
     <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
     <meta name="theme-color" content="#e0a6a6" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..900&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="/fonts/Outfit-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/Outfit-Light.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/Outfit-Bold.ttf" as="font" type="font/ttf" crossorigin />
+
+    <!-- Preload background image -->
+    <link rel="preload" href="/bg.png" as="image" />
 
     <title>Ben Saff - {title}</title>
   </head>
@@ -41,7 +42,7 @@ const currentPath = Astro.url.pathname;
       <nav
         class="w-full flex justify-center z-50 backdrop-blur bg-white/50 fixed left-0 right-0 bottom-0 top-auto py-2 sm:sticky sm:top-0 sm:bottom-auto sm:py-4"
       >
-        <NavIcons currentPath={currentPath} className={styles.navLinks} client:only="react" />
+        <NavIcons currentPath={currentPath} className={styles.navLinks} />
       </nav>
 
       <section class="page active">
