@@ -49,5 +49,18 @@ const currentPath = Astro.url.pathname;
         <slot />
       </section>
     </main>
+
+    <script type="speculationrules">
+      {
+        "prerender": [
+          {
+            "where": {
+              "selector_matches": "nav a[href^='/']"
+            },
+            "eagerness": "moderate"
+          }
+        ]
+      }
+    </script>
   </body>
 </html>
