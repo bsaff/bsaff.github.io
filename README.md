@@ -12,7 +12,7 @@ A minimalist personal website built with [Astro](https://astro.build).
 │   └── styles/      # Global styles
 ├── public/          # Static assets
 │   ├── avatar.jpg
-│   ├── bg.png
+│   ├── bg.webp
 │   └── favicon/
 └── .github/         # GitHub Actions workflow
 ```
