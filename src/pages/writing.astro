@@ -1,131 +1,138 @@
 ---
 import BaseLayout from "../layouts/Base.astro";
 
-const writings = {
-  publishedWorks: [
-    {
-      title: "A Letter from Jeff",
-      url: "https://partnersandson.com/products/collide-zine-issue-8",
-      publication: "Collide Magazine Issue #8, 2024",
-    },
-    {
-      title: "Time Makes a Sharp Stone Smooth",
-      url: "https://www.brooklynaikikai.com/",
-      publication: "Brooklyn Aikikai Journal: Vol 3, No 2",
-    },
-    {
-      title: "Living Room Dance",
-      url: "https://moonstone-arts-center.square.site/product/2021-featured-poets-anthology/325?cs=true&cst=custom",
-      publication: "Moonstone Press: 2021 Featured Poets Anthology",
-    },
-    {
-      title: "Calculating Time",
-      publication: "Toho Journal: Vol 3, No 1",
-    },
-    {
-      title: "Minor League All American Dance Club",
-      url: "https://www.amazon.com/dp/B0DDGX39LN?ref_=pe_93986420_774957520",
-      publication: "Toho Publishing",
-    },
-    {
-      title: "So Many Noises",
-      url: "http://www.recenterpress.com/issue-one-benjamin-saff.html",
-      publication: "Recenter Press",
-    },
-    {
-      title: "a line describes",
-      url: "https://www.amazon.com/Toho-Journal-Unity-Vol-Literary/dp/1733657533",
-      publication: "Toho Journal: Vol 1, No 1",
-    },
-    {
-      title: "Considering the Burrito",
-      url: "http://malarkeybooks.com/critical-analysis",
-      publication: "Marlarkey Books",
-    },
-    {
-      title: "Eastern Wisdom for the Broken Heart",
-      url: "https://thoughtcatalog.com/ben-saff/2016/04/5-eastern-wisdoms-to-help-heal-your-broken-heart/",
-      publication: "Thought Catalog",
-    },
-  ],
-  bookReviews: [
-    {
-      title: "In Review: Tokyo Ueno Station by Yū Miri",
-      url: "https://www.asymptotejournal.com/blog/2019/03/11/misshapen-shards-yu-miris-tokyo-ueno-station-in-review/",
-      publication: "Asymptote Journal",
-    },
-    {
-      title: "In Review: The Samurai by Shūsaku Endō",
-      url: "https://www.asymptotejournal.com/blog/2018/10/11/a-journey-of-faith-shusaku-endos-the-samurai-in-review/",
-      publication: "Asymptote Journal",
-    },
-    {
-      title: "In Review: The Emissary by Yoko Tawada",
-      url: "https://www.asymptotejournal.com/blog/2018/05/24/in-review-the-emissary-by-yoko-tawada/",
-      publication: "Asymptote Journal",
-    },
-  ],
-  editing: [
-    {
-      title: "Rules of Sculpture (2023)",
-      url: "https://www.amazon.com/Rules-Sculpture-Caroline-Furr/dp/B0C6C62676",
-      publication: "Caroline Furr",
-    },
-    {
-      title: "Stand Before Lifting (2025, Forthcoming)",
-      publication: "Caroline Furr",
-    },
-  ],
-};
+const books = [
+  {
+    title: "Responde: A Collection of Poems",
+    publication: "Cloud Press, 2026",
+    url: "https://www.amazon.com/dp/B0GXPX3D5L",
+  },
+  {
+    title: "Minor League All American Dance Club",
+    publication: "Toho Publishing, 2020",
+    url: "https://www.amazon.com/dp/B0DDGX39LN?ref_=pe_93986420_774957520",
+  },
+];
+
+const publishedWorks = [
+  {
+    title: "A Letter from Jeff",
+    url: "https://partnersandson.com/products/collide-zine-issue-8",
+    publication: "Collide Magazine Issue #8, 2024",
+  },
+  {
+    title: "Time Makes a Sharp Stone Smooth",
+    url: "https://www.brooklynaikikai.com/",
+    publication: "Brooklyn Aikikai Journal: Vol 3, No 2",
+  },
+  {
+    title: "Living Room Dance",
+    url: "https://moonstone-arts-center.square.site/product/2021-featured-poets-anthology/325?cs=true&cst=custom",
+    publication: "Moonstone Press: 2021 Featured Poets Anthology",
+  },
+  {
+    title: "Calculating Time",
+    publication: "Toho Journal: Vol 3, No 1",
+  },
+  {
+    title: "So Many Noises",
+    url: "http://www.recenterpress.com/issue-one-benjamin-saff.html",
+    publication: "Recenter Press",
+  },
+  {
+    title: "a line describes",
+    url: "https://www.amazon.com/Toho-Journal-Unity-Vol-Literary/dp/1733657533",
+    publication: "Toho Journal: Vol 1, No 1",
+  },
+  {
+    title: "Considering the Burrito",
+    url: "http://malarkeybooks.com/critical-analysis",
+    publication: "Marlarkey Books",
+  },
+  {
+    title: "Eastern Wisdom for the Broken Heart",
+    url: "https://thoughtcatalog.com/ben-saff/2016/04/5-eastern-wisdoms-to-help-heal-your-broken-heart/",
+    publication: "Thought Catalog",
+  },
+];
+
+const bookReviews = [
+  {
+    title: "In Review: Tokyo Ueno Station by Yū Miri",
+    url: "https://www.asymptotejournal.com/blog/2019/03/11/misshapen-shards-yu-miris-tokyo-ueno-station-in-review/",
+    publication: "Asymptote Journal",
+  },
+  {
+    title: "In Review: The Samurai by Shūsaku Endō",
+    url: "https://www.asymptotejournal.com/blog/2018/10/11/a-journey-of-faith-shusaku-endos-the-samurai-in-review/",
+    publication: "Asymptote Journal",
+  },
+  {
+    title: "In Review: The Emissary by Yoko Tawada",
+    url: "https://www.asymptotejournal.com/blog/2018/05/24/in-review-the-emissary-by-yoko-tawada/",
+    publication: "Asymptote Journal",
+  },
+];
+
+const editing = [
+  {
+    title: "Rules of Sculpture (2023)",
+    url: "https://www.amazon.com/Rules-Sculpture-Caroline-Furr/dp/B0C6C62676",
+    publication: "Caroline Furr",
+  },
+  {
+    title: "Stand Before Lifting (2025)",
+    url: "https://www.amazon.com/Stand-Before-Lifting-Caroline-Furr/dp/B0FPMP2ZHV/ref=sr_1_2?dib=eyJ2IjoiMSJ9.5rfXiXFwJLt79BXKnmEf_t5dZ6piUO5wMzc-4AUFYP7GjHj071QN20LucGBJIEps.zi-ToeGrh28HxL3fLxrP37w2ovDxdwM1KpWlucsQ3vA&dib_tag=se&qid=1776644090&refinements=p_27%3Aben+saff&s=books&sr=1-2",
+    publication: "Caroline Furr",
+  },
+];
+
+const poemsEssaysEtc = [...publishedWorks, ...bookReviews];
 ---
 
 <BaseLayout title="Writing">
-  <div class="mx-auto max-w-[700px] w-full flex flex-col pb-16">
-    <h1 class="text-lg mb-2 font-normal">Published Works</h1>
+  <div class="mx-auto max-w-[700px] w-full flex flex-col pt-12 sm:pt-16 pb-16">
+    <h1 class="text-lg mb-2 font-normal">Books</h1>
     <ul class="list-none p-0 m-0 mb-8 w-full max-w-[600px] flex flex-col">
       {
-        writings.publishedWorks.map((work) => (
+        books.map((book) => (
           <li class="mb-4 w-full flex flex-col">
-            {work.url ? (
-              <a href={work.url} target="_blank" rel="noreferrer" class="inline-block">
-                {work.title}
-              </a>
-            ) : (
-              <span>{work.title}</span>
-            )}
-            <span class="text-sm text-gray-600 mt-1 text-left">{work.publication}</span>
-          </li>
-        ))
-      }
-    </ul>
-
-    <h1 class="text-lg mb-2 font-normal">Book Reviews</h1>
-    <ul class="list-none p-0 m-0 mb-8 w-full max-w-[600px] flex flex-col">
-      {
-        writings.bookReviews.map((review) => (
-          <li class="mb-4 w-full flex flex-col">
-            <a href={review.url} target="_blank" rel="noreferrer" class="inline-block">
-              {review.title}
+            <a href={book.url} target="_blank" rel="noreferrer" class="inline-block">
+              {book.title}
             </a>
-            <span class="text-sm text-gray-600 mt-1">{review.publication}</span>
+            <span class="text-sm text-gray-600 mt-1 text-left">{book.publication}</span>
           </li>
         ))
       }
     </ul>
 
     <h1 class="text-lg mb-2 font-normal">Editing</h1>
+    <ul class="list-none p-0 m-0 mb-8 w-full max-w-[600px] flex flex-col">
+      {
+        editing.map((item) => (
+          <li class="mb-4 w-full flex flex-col">
+            <a href={item.url} target="_blank" rel="noreferrer" class="inline-block">
+              {item.title}
+            </a>
+            <span class="text-sm text-gray-600 mt-1 text-left">{item.publication}</span>
+          </li>
+        ))
+      }
+    </ul>
+
+    <h1 class="text-lg mb-2 font-normal">Poems, Essays, Etc.</h1>
     <ul class="list-none p-0 m-0 w-full max-w-[600px] flex flex-col">
       {
-        writings.editing.map((edit) => (
+        poemsEssaysEtc.map((item) => (
           <li class="mb-4 w-full flex flex-col">
-            {edit.url ? (
-              <a href={edit.url} target="_blank" rel="noreferrer" class="inline-block">
-                {edit.title}
+            {item.url ? (
+              <a href={item.url} target="_blank" rel="noreferrer" class="inline-block">
+                {item.title}
               </a>
             ) : (
-              <span>{edit.title}</span>
+              <span>{item.title}</span>
             )}
-            <span class="text-sm text-gray-600 mt-1 ">{edit.publication}</span>
+            <span class="text-sm text-gray-600 mt-1 text-left">{item.publication}</span>
           </li>
         ))
       }
